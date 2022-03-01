@@ -22,7 +22,7 @@ jxRequirements:
     schedule: ""
   cluster:
     chartRepository: http://bucketrepo.jx.svc.cluster.local/bucketrepo/charts
-    clusterName: kind
+    clusterName: demo-rec
     devEnvApprovers:
     - todo
     environmentGitOwner: todo
@@ -33,16 +33,20 @@ jxRequirements:
     registry: ghcr.io
   environments:
   - key: dev
+    owner: cloover
+    repository: jenkins-x-demo
   - key: staging
   - key: production
   ingress:
-    domain: change.me
+    domain: z-demo.cloud.maileva.net
     kind: ingress
     namespaceSubDomain: -nginx.
     tls:
       email: ""
       enabled: false
       production: false
+  pipelineUser:
+    username: cloover
   repository: bucketrepo
   secretStorage: local
   vault: {}
