@@ -1,0 +1,11 @@
+filepath: ""
+namespace: jx-staging
+repositories:
+- name: dev
+  url: http://bucketrepo-jx.z-demo.cloud.maileva.net
+releases:
+- chart: dev/ll
+  version: 0.0.1
+  name: ll
+templates: {}
+renderedvalues: {}
