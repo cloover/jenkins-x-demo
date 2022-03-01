@@ -6,7 +6,7 @@ spec:
     schedule: ""
   cluster:
     chartRepository: http://bucketrepo.jx.svc.cluster.local/bucketrepo/charts
-    clusterName: kind
+    clusterName: demo-rec
     devEnvApprovers:
     - todo
     environmentGitOwner: todo
@@ -20,7 +20,7 @@ spec:
   - key: staging
   - key: production
   ingress:
-    domain: ""
+    domain: z-demo.cloud.maileva.net
     externalDNS: false
     namespaceSubDomain: -jx.
     tls:
